@@ -1506,7 +1506,7 @@ CREATE TABLE `xray_preparation` (
 --
 
 INSERT INTO `xray_preparation` (`PREP_ID`, `NAME`, `MODALITY`, `BODY_PART`, `DESCRIPTION_THAI`, `DESCRIPTION_ENG`) VALUES
-(1, 'test', 'CT', 'tes', '	teset	', '	test	'),
+(1, 'HSG', 'HSG', 'DR', 'PELVIS', 'test'),
 (2, 'test2', 'CT', 'test2', 'test2', 'test2'),
 (3, 'test2', 'FLUORO', 'test2', 'test2', 'test2'),
 (4, 'test', 'ANGIO', 'ABDOMEN', 'tes', 'test'),
