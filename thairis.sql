@@ -2832,6 +2832,15 @@ ALTER TABLE `xray_request_detail`
 --
 ALTER TABLE `xray_sc_calendar`
   MODIFY `calendar_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+-- Example: Add AUTO_INCREMENT to primary keys
+ALTER TABLE `xray_api_client` MODIFY `ID` int(2) NOT NULL AUTO_INCREMENT;
+
+-- Example: Create missing calendar table
+CREATE TABLE `calendar` (
+  `calendar_id` int(11) NOT NULL AUTO_INCREMENT,
+  `calendar_name` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`calendar_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
 -- AUTO_INCREMENT for table `xray_sc_events`
